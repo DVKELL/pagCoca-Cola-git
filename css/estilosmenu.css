@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*HEADER*/
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*VH es para que se ajuste a la altura de la ventada del
+  navegador*/
+  height: 7vh;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+}
+
+.logo img {
+  /*object-fit: cover Funciona para mentener una imagen
+  dentro de un contenedor*/
+  object-fit: cover;
+  height: 55%;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 75%;
+}
+
+nav a {
+  padding: 0 20px;
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* nav a:last-child {
+  margin-right: 25px;
+} */
+
+/*Section 1*/
+
+.seccion1 {
+  background-image: url(../imagenes/banner.jpg);
+  /*Para que la imagen se acople completamente al contenedor padre*/
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 93vh;
+}
+
+.seccion1 a {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+  padding: 15px 28px;
+  background-color: red;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.seccion1 h1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.seccion1 p {
+  color: #fff;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/*seccion2*/
+
+.section2 {
+  background-image: url(../imagenes/img4.jpg);
+  background-position: center;
+  width: 100%;
+  height: 22vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 6%;
+}
+
+.section2 p {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+/*seccion3*/
+
+.section3 {
+  width: 100%;
+  height: 78vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.img-titulo {
+  width: 25%;
+  height: 80%;
+  border: 2px solid black;
+
+}
+
+.img {
+  width: 100%;
+  height: 40%;
+}
+
+.img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.textos {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.textos h3 {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.textos p {
+  color: black;
+  font-size: 17px;
+  margin: 1% 0;
+}
+
+.textos a {
+  text-decoration: none;
+  padding: 10px 15px;
+  margin-top: 3%;
+  border: 2px solid red;
+  color: black;
+  border-radius: 2px;
+}
+
+/*footer*/
+
+.footer {
+  background-color: black;
+  width: 100%;
+  height: 18vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-footer {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 65%;
+}
+
+.logo-footer img {
+  object-fit: cover;
+  height: 60%;
+}
+
+.textos-footer {
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textos-derecho {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.textos-derecho a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.textos-izquierdo {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.textos-izquierdo a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
